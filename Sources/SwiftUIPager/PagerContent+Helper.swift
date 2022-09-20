@@ -10,25 +10,6 @@ import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 extension Pager.PagerContent {
-    
-    #if !os(tvOS)
-    
-    /// `swipeGesture` translation on the X-Axis
-    var draggingOffset: CGFloat {
-        pagerModel.draggingOffset
-    }
-
-    /// `swipeGesture` last translation on the X-Axis
-    var lastDraggingValue: DragGesture.Value? {
-        pagerModel.lastDraggingValue
-    }
-
-    /// `swipeGesture` velocity on the X-Axis
-    var draggingVelocity: Double {
-        pagerModel.draggingVelocity
-    }
-    
-    #endif
 
     /// Increment resulting from the last swipe
     var pageIncrement: Int {
